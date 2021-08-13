@@ -1,0 +1,25 @@
+@mixin display($align, $content) {
+    display: flex;
+    align-items: $align;
+    justify-content: $content;
+}
+
+@mixin display-diraction($align, $content) {
+    display: flex;
+    align-items: $align;
+    justify-content: $content;
+    flex-direction: column;
+}
+
+@mixin text($size, $family, $color) {
+    font-size: $size;
+    font-family: $family;
+    color: $color;
+}
+
+@mixin bgc($bgc, $height) {
+    background-color: $bgc;
+    max-width: 1920px;
+    height: $height;
+    margin: 0 auto;
+}

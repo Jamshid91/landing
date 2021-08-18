@@ -6,74 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.green.min.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body class="home_page">
+<body>
+    <div class="mobile_menu">
+        <div class="mobile_menu_hat">
+            <div class="mobile_menu_closeBtn">
+                <i class="fal fa-times fa-3x"></i>
+            </div>
+        </div>
+        <ul class="mobile_menu_item">
+            <li class="mobile_menu_list"><a href="">Цены</a></li>
+            <li class="mobile_menu_list"><a href="">Этапы работы </a></li>
+            <li class="mobile_menu_list"><a href="">Отзывы</a></li>
+            <li class="mobile_menu_list"><a href="">Команда</a></li>
+            <li class="mobile_menu_list"><a href="">Контакты</a></li>
+        </ul>
+        <div class="mobile_menu_contact">
+            <a href="tel:+7 (499) 394-00-95" class="nav_mobile_contact_num">+7 (499) 394-00-95</a> <br>
+            <span class="nav_mobile_contact_text">Обратный звонок</span>
+        </div>
+    </div>
+
     <header>
         <div class="container position-relative">
-            <nav>
+            <nav class="nav_desctop">
                 <div class="row no-gutters d-flex align-items-center">
-                    <div class="nav_logo col-lg-2">
-                        <a href="">
-                            <img src="assets/images/png/logo.png" alt="">
+                    <div class="col-lg-2">
+                        <a href="" class="nav_desctop_logo">
+                            <img src="assets/images/svg/logo.svg" alt="logo.svg" class="nav_desctop_logo_svg">
                         </a>
                     </div>
                     <div class="col-lg-6 offset-lg-1">
-                        <ul class="nav_item">
-                            <li class="nav_list"><a href="">Цены</a></li>
-                            <li class="nav_list"><a href="">Этапы работы </a></li>
-                            <li class="nav_list"><a href="">Отзывы</a></li>
-                            <li class="nav_list"><a href="">Команда</a></li>
-                            <li class="nav_list"><a href="">Контакты</a></li>
+                        <ul class="nav_desctop_item">
+                            <li class="nav_desctop_list"><a href="">Цены</a></li>
+                            <li class="nav_desctop_list"><a href="">Этапы работы </a></li>
+                            <li class="nav_desctop_list"><a href="">Отзывы</a></li>
+                            <li class="nav_desctop_list"><a href="">Команда</a></li>
+                            <li class="nav_desctop_list"><a href="">Контакты</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-2 offset-lg-1 nav_contact">
-                        <a href="tel:+7 (499) 394-00-95">+7 (499) 394-00-95</a>
-                        <span>Обратный звонок</span>
+                    <div class="col-lg-2 offset-lg-1 text-right">
+                        <a href="tel:+7 (499) 394-00-95" class="nav_desctop_contact">+7 (499) 394-00-95</a>
+                        <span class="nav_desctop_contact_text">Обратный звонок</span>
                     </div>
                 </div>
             </nav>
 
-            <div class="row no-gutters middle_box w-100">
-                <div class="left_middle_box col-lg-7 ">
-                    <h1>Сделаем замер сопротивления изоляции</h1>
-                    <span>по Москве и области</span>
-                    <div class="consultation">
-                        <form action="">
-                            <input type="text" name="user-phone" id="userPhone" placeholder="Ваш номер телефона">
-                            <button type="button">Получить консультацию</button>
-                        </form>
+            <nav class="nav_mobile">
+                <div class="row d-flex align-items-center justify-content-between">
+                    <div class="col-4">
+                        <a href="" class="nav_mobile_logo">
+                            <img src="assets/images/svg/logo.svg" alt="logo.svg" class="nav_mobile_logo_svg">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-2 d-flex align-items-center justify-content-around">
+                        <div class="nav_mobile_contact">
+                            <a href="tel:+7 (499) 394-00-95" class="nav_mobile_contact_num">+7 (499) 394-00-95</a> <br>
+                            <span class="nav_mobile_contact_text">Обратный звонок</span>
+                        </div>
+                        <div class="menu_burger">
+                            <div class="menu_burger_item">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="right_middle_box col-lg-5 ">
-                    <img src="assets/images/master-man.png" class="master_man" alt="">
-                </div>
-            </div>
-            <div class="arrows">
-                <img src="assets/images/green-arrow.png" class="green-arrow no-gutters" alt="">
-                <img src="assets/images/blue-arrow.png" class="blue-arrow no-gutters" alt="">
-            </div>
+            </nav>
 
-            <div class="row no-gutters counter">
-                <div class="col-lg-3 counter_list">
+           
+
+            <div class="row no-gutters">
+                <div class="col-lg-7 col-sm-8 col-12 header_title">
+                    <h1 class="header_title_text">Сделаем замер сопротивления изоляции</h1>
+                    <span class="header_title_text_sub">по Москве и области</span>
+                    
+                        <form action="" class="header_form_consultation">
+                            <input type="text" name="user-phone" class="phone header_form_consultation_input" id="phone" placeholder="Ваш номер телефона" required>
+                            <button type="submit" class="header_form_consultation_btn">Получить консультацию</button>
+                        </form>
+                </div>
+            </div>
+            
+            <img src="assets/images/master-man.png" class="header_master_man" alt="">
+            <img src="assets/images/backImg.png" alt="backImg.png" class="header_backImg_arrow">
+
+            <div class="row no-gutters header_counter">
+                <div class="col-md-3 header_counter_list">
                     <strong class="counter_num">9</strong>
-                    <span>лет <br> успешной <br> работы</span>
+                    <span class="counter_text">лет <br> успешной <br> работы</span>
                 </div>
-                <div class="col-lg-3 counter_list">
+                <div class="col-md-3 header_counter_list">
                     <strong class="counter_num">2</strong>
-                    <span>дня <br> от заявки <br> до резултата</span>
+                    <span class="counter_text">дня <br> от заявки <br> до резултата</span>
                 </div>
-                <div class="col-lg-3 counter_list">
+                <div class="col-md-3 header_counter_list">
                     <strong class="counter_num">40</strong>
-                    <span>% скидка <br> постоянным клиентам</span>
+                    <span class="counter_text">% скидка <br> постоянным клиентам</span>
                 </div>
-                <div class="col-lg-3 counter_list">
+                <div class="col-md-3 header_counter_list">
                     <strong class="counter_num">0</strong>
-                    <span>рублей <br> за консультацию <br> и выезд для оценки</span>
+                    <span class="counter_text">рублей <br> за консультацию <br> и выезд для оценки</span>
                 </div>
             </div>
         </div>
@@ -83,19 +119,25 @@
     <section class="trust_us">
         <div class="container">
             <div class="row no-gutters">
-                <div class="col-12 trust_us_text">
+                <div class="col-12 title_text">
                     <h2>Нам доверяют</h2>
                 </div>
             </div>
-            <div class="row no-gutters">
-                <div class="col-12">
-                    <div class="owl-carousel">
-                        <div><img src="assets/images/png/Philips wordmark.png" alt=""></div>
-                    <div><img src="assets/images/png/lukoyl.png" alt=""></div>
-                    <div><img src="assets/images/png/gazprom.png" alt=""></div>
-                    <div><img src="assets/images/png/oktabr.png" alt=""></div>
-                    <div><img src="assets/images/png/bank.png" alt=""></div>
-                    <div><img src="assets/images/png/lukoyl.png" alt=""></div>
+            <div class="row d-flex justify-content-center position-relative no-gutters">
+
+                    <button class="prev"><img src="assets/images/svg/prev.svg" alt="prev.svg"></button>
+                    <button class="next"><img src="assets/images/svg/next.svg" alt="next.svg"></button>
+
+                <div class="col-lg-10 col-12 trustUs_carousel">
+                    <div class="trustUs_carousel_item">
+                        <div class="trustUs_corusel_list"><img class="trustUs_corusel_list_img" src="assets/images/png/Philips wordmark.png" alt=""></div>
+                        <div class="trustUs_corusel_list"><img class="trustUs_corusel_list_img" src="assets/images/png/lukoyl.png" alt=""></div>
+                        <div class="trustUs_corusel_list"><img class="trustUs_corusel_list_img" src="assets/images/png/gazprom.png" alt=""></div>
+                        <div class="trustUs_corusel_list"><img class="trustUs_corusel_list_img" src="assets/images/png/oktabr.png" alt=""></div>
+                        <div class="trustUs_corusel_list"><img class="trustUs_corusel_list_img" src="assets/images/png/bank.png" alt=""></div>
+                        <div class="trustUs_corusel_list"><img class="trustUs_corusel_list_img" src="assets/images/png/lukoyl.png" alt=""></div>
+                        <div class="trustUs_corusel_list"><img class="trustUs_corusel_list_img" src="assets/images/png/gazprom.png" alt=""></div>
+                        <div class="trustUs_corusel_list"><img class="trustUs_corusel_list_img" src="assets/images/png/oktabr.png" alt=""></div>
                     </div>
                 </div>
             </div>
@@ -113,31 +155,36 @@
             </div>
             <div class="row no-gutters">
                 <div class="col-12">
-                    <table>
+                    <table class="standard_service_table">
                         <tr>
                             <th class="th_img"><img src="assets/images/png/table-green.png" alt="">Стоимость услуги</th>
                             <th class="th_title">от <span> 600 </span> ₽</th>
                             <th class="th_title middle">от <span> 900 </span> ₽</th>
                             <th class="th_title">от <span> 1200 </span> ₽</th>
                         </tr>
+
                         <tr>
                             <td class="td_img"><img src="assets/images/png/table-blue.png" alt="">Полная проверка объекта</td>
                             <td class="td_title"><img src="assets/images/png/check.png" alt=""></td>
                             <td class="td_title middle"><img src="assets/images/png/check.png" alt=""></td>
                             <td class="td_title"><img src="assets/images/png/check.png" alt=""></td>
                         </tr>
+                        
                         <tr>
                             <td class="td_img"><img src="assets/images/png/table-green.png" alt="">Площадь объекта</td>
                             <td class="td_title">до 60 м² </td>
                             <td class="td_title middle">60-130 м²</td>
                             <td class="td_title">130-250 м²</td>
                         </tr>
+                
                         <tr>
                             <td class="td_img"><img src="assets/images/png/table-blue.png" alt="">Технический отчёт</td>
                             <td class="td_title"><img src="assets/images/png/check.png" alt=""></td>
                             <td class="td_title middle"><img src="assets/images/png/check.png" alt=""></td>
                             <td class="td_title"><img src="assets/images/png/check.png" alt=""></td>
                         </tr>
+                        
+
                         <tr>
                             <td class="td_img"><img src="assets/images/png/table-green.png" alt="">Количество автоматов</td>
                             <td class="td_title">до 30 шт</td>
@@ -146,12 +193,59 @@
                         </tr>
                         
                         <tr>
-                            <td class="td_img"></td>
-                            <td class="td_title"><button>Заказать</button></td>
-                            <td class="td_title middle"><button>Заказать</button></td>
-                            <td class="td_title"><button>Заказать</button></td>
+                            <td rowspan="2" class="td_img"></td>
+                            <td rowspan="2" class="td_title"><button>Заказать</button></td>
+                            <td rowspan="2" class="td_title middle"><button>Заказать</button></td>
+                            <td rowspan="2" class="td_title"><button>Заказать</button></td>
                         </tr>
                     </table>
+                    <!-- End standard_service_table -->
+
+                    <div class="standard_service_mobile">
+                        <div class="standard_service_mobile_list">
+                            <h4 class="services_mobile_text">Стоимость услуги</h4>
+                            <span class="services_mobile_textInfo">от <strong>6000</strong> ₽</span>
+                            <h4 class="services_mobile_text">Полная проверка <br> объекта</h4>
+                            <i class="fad fa-check-circle fa-2x"></i>
+                            <h4 class="services_mobile_text">Площадь объекта</h4>
+                            <span class="services_mobile_textInfo">до 60 м² </span>
+                            <h4 class="services_mobile_text">Технический отчёт</h4>
+                            <i class="fad fa-check-circle fa-2x"></i>
+                            <h4 class="services_mobile_text">Количество автоматов</h4>
+                            <span class="services_mobile_textInfo">до 30 шт</span>
+                            <button class="standard_service_mobileBtn">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="standard_service_mobile">
+                        <div class="standard_service_mobile_list">
+                            <h4 class="services_mobile_text">Стоимость услуги</h4>
+                            <span class="services_mobile_textInfo">от <strong>9000</strong> ₽</span>
+                            <h4 class="services_mobile_text">Полная проверка <br> объекта</h4>
+                            <i class="fad fa-check-circle fa-2x"></i>
+                            <h4 class="services_mobile_text">Площадь объекта</h4>
+                            <span class="services_mobile_textInfo">до 60 - 130 м² </span>
+                            <h4 class="services_mobile_text">Технический отчёт</h4>
+                            <i class="fad fa-check-circle fa-2x"></i>
+                            <h4 class="services_mobile_text">Количество автоматов</h4>
+                            <span class="services_mobile_textInfo">до 30 - 50 шт</span>
+                            <button class="standard_service_mobileBtn">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="standard_service_mobile">
+                        <div class="standard_service_mobile_list">
+                            <h4 class="services_mobile_text">Стоимость услуги</h4>
+                            <span class="services_mobile_textInfo">от <strong>1200</strong> ₽</span>
+                            <h4 class="services_mobile_text">Полная проверка <br> объекта</h4>
+                            <i class="fad fa-check-circle fa-2x"></i>
+                            <h4 class="services_mobile_text">Площадь объекта</h4>
+                            <span class="services_mobile_textInfo">до 130 - 250 м² </span>
+                            <h4 class="services_mobile_text">Технический отчёт</h4>
+                            <i class="fad fa-check-circle fa-2x"></i>
+                            <h4 class="services_mobile_text">Количество автоматов</h4>
+                            <span class="services_mobile_textInfo">до 50 - 70 шт</span>
+                            <button class="standard_service_mobileBtn">Заказать</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -160,33 +254,50 @@
 
     <section class="form">
         <div class="container">
-            <div class="row no-gutters">
                <form action="">
-                <div class="col-lg-5 offset-lg-1 left">
-                    <h2>Рассчитайте <span>индивидуальную</span> стоимость</h2>
-                    <p>Отправьте нам фото электрощита, проект или другую информацию для расчёта</p>
-                    <button type="button">Рассчитать стоимость</button> <br>
+            <div class="row no-gutters">
+                <div class="col-lg-5 col-md-6 col-12 offset-lg-1 left">
+                    <h2 class="form_title_text">Рассчитайте <span>индивидуальную</span> стоимость</h2>
+                    <p class="form_title_textInfo">Отправьте нам фото электрощита, проект или другую информацию для расчёта</p>
+                    <div class="form_button_agree">
+                        <button type="button" class="form_button">Рассчитать стоимость</button> <br>
                     <span class="sub_text">Нажимая кнопку, вы соглашаетесь с <a href="">политикой конфиденциальности</a></span>
+                    </div>
                 </div>
 
-                <div class="col-lg-5 right">
-                        <input type="text" name="user-name" id="userName" placeholder="Ваше имя">
-                        <input type="text" name="user-phone" id="userPhone" placeholder="Номер телефона">
-                        <input type="email" name="user-email" id="userEmail" placeholder="Электронная почта">
-                        <textarea name="user-massage" id="userMassage" placeholder="Добавьте описание..."></textarea>
+                <div class="col-lg-5 col-md-6 col-12 form_list">
+                        <label for="userName" class="inp_label">
+                            <input type="text" name="user-name" id="userName" placeholder="Ваше имя" style="text-transform: capitalize;">
+                            <span class="return_error"></span>
+                        </label>
+                        <label for="userPhone" class="inp_label">
+                            <input type="text" name="user-phone" class="phone" id="userPhone" placeholder="Номер телефона">
+                            <span class="return_error"></span>
+                        </label>
+                        <label for="userEmail" class="inp_label">
+                            <input type="email" name="user-email" id="userEmail" placeholder="Электронная почта">
+                            <span class="return_error"></span>
+                        </label>
+                        <label for="userMessage" class="text_label">
+                            <textarea name="user-massage" id="userMessage" placeholder="Добавьте описание..."></textarea>
+                            <span class="return_error"></span>
+                        </label>
                    
                         <div class="d-flex">
                             <span class="file_text">Файл</span>
-                            <label for="userFile">
+                            <label for="userFile" class="file_label">
                                 <img src="assets/images/png/file.png" alt="">
-                                Загрузить файл
-                                <input type="file" name="user-file" id="userFile">
+                                <i class="fad fa-check-circle"></i>
+                                <span>Загрузить файл</span>
+                                <div class="">
+                                    <input type="file" name="user-file" id="userFile">
+                                    <span class="return_error"></span>
+                                </div>
                             </label>
-                        </div>
-                
+                        </div>   
                 </div>
-               </form>
             </div>
+               </form>
         </div>
     </section>
     <!-- End form -->
@@ -260,7 +371,7 @@
                     <h2>Отзывы</h2>
                 </div>
 
-                <div class="col-lg-4 review_list">
+                <div class="col-md-4 col-12 review_list">
                     <div class="review_text">
                         <img src="assets/images/png/fork.png" alt="">
                         <h3>Хорошая скидка при повторном обращении</h3>
@@ -271,7 +382,7 @@
                         <h4>Алексей Николаевич</h4>
                     </div>
                 </div>
-                <div class="col-lg-4 review_list">
+                <div class="col-md-4 col-12 review_list">
                     <div class="review_text">
                         <img src="assets/images/png/fork.png" alt="">
                         <h3>Документы выдали на следующий день!</h3>
@@ -282,7 +393,7 @@
                         <h4>Ольга Михайловна</h4>
                     </div>
                 </div>
-                <div class="col-lg-4 review_list">
+                <div class="col-md-4 col-12 review_list">
                     <div class="review_text">
                         <img src="assets/images/png/fork.png" alt="">
                         <h3>Быстро, качественно, бесплатное обследование</h3>
@@ -306,33 +417,41 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-11 example_list">
-                    <img src="assets/images/png/exaple1.png" alt="">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-11 col-12">
+                    <div class="example_list">
+                        <img src="assets/images/png/exaple1.png" alt="">
                     <div class="text_info">
                         <h5>Сборка электрощита АВР для ЦОД</h5>
                         <p>Новый запрос от заказчика, ему было необходимо перевезти серверные стойки из здания, которое должно было в ближайшее время сноситься. Мы разработали рабочую документацию, после согласования приступили к работе</p>
                     </div>
+                    </div>
                 </div>
-                <div class="col-lg-11 example_list">
-                    <img src="assets/images/png/example2.png" alt="">
+                <div class="col-lg-11 col-12 ">
+                    <div class="example_list">
+                        <img src="assets/images/png/example2.png" alt="">
                     <div class="text_info">
                         <h5>Комплексные испытания ТП и ГРЩ в Московской Области</h5>
                         <p>Сотрудниками нашей компании был произведен комплекс испытаний энергоцентра и трансформаторной подстанции в Московской области</p>
                     </div>
+                    </div>
                 </div>
-                <div class="col-lg-11 example_list">
-                    <img src="assets/images/png/example3.png" alt="">
+                <div class="col-lg-11 col-12 ">
+                    <div class="example_list">
+                        <img src="assets/images/png/example3.png" alt="">
                     <div class="text_info">
                         <h5>Проведение приёмо-сдаточных испытаний в ТЦ на севере Москвы</h5>
                         <p>Проведение испытаний для сдачи объекта в одном из торговых центров в Москве. На странице с подробным описанием фото с объекта, выявленные проблемы</p>
                     </div>
+                    </div>
                 </div>
-                <div class="col-lg-11 example_list">
-                    <img src="assets/images/png/example4.png" alt="">
+                <div class="col-lg-11 col-12">
+                    <div class="example_list">
+                        <img src="assets/images/png/example4.png" alt="">
                     <div class="text_info">
                         <h5>Сборка электрощита для переноса линий</h5>
                         <p>Поступила задача, из существующего электрощита перенести часть кабельных линий, питающих бытовые и компьютерные розетки 220В, в существующем электрощите места для установки диф. автоматов нет, так как щит заполнен на 95%, а также диф. автоматы занимают 2 модуля, в отличии от обычных автоматических выключателей.</p>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -348,14 +467,13 @@
                 </div>
             </div>
 
-            <div class="row d-flex align-items-center justify-content-center">
-                <div class="col-lg-10 our_team_item">
-                    <div class=" owl-carousel">
-                        <div class="our_team_list">
-                            <img src="assets/images/png/team3.png" alt="">
-                            <h5>Бровкин Алексей</h5>
-                            <p>Инженер электролаборатории</p>
-                        </div>
+            <div class="row position-relative d-flex align-items-center justify-content-center">
+               
+                <button class="prevBtn"><img src="assets/images/svg/prev.svg" alt="prev.svg"></button>
+                <button class="nextBtn"><img src="assets/images/svg/next.svg" alt="next.svg"></button>
+                
+                <div class="col-lg-10 col-12 our_team_container">
+                    <div class="our_team_item">
                         <div class="our_team_list">
                             <img src="assets/images/png/team1.png" alt="">
                             <h5>Горбачев Алексей</h5>
@@ -366,6 +484,20 @@
                             <h5>Земскова Дарья</h5>
                             <p>Менеджер по работе с клиентами</p>
                         </div>
+                        <div class="our_team_list">
+                            <img src="assets/images/png/team3.png" alt="">
+                            <h5>Бровкин Алексей</h5>
+                            <p>Инженер электролаборатории</p>
+                        </div>
+                        <div class="our_team_list">
+                            <img src="assets/images/png/team2.png" alt="">
+                            <h5>Земскова Дарья</h5>
+                            <p>Менеджер по работе с клиентами</p>
+                        </div>
+                        <img src="assets/images/png/team1.png" alt="">
+                        <h5>Горбачев Алексей</h5>
+                        <p>Начальник электролаборатории</p>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -373,7 +505,7 @@
     </section>
     <!-- End our_team-->
 
-    <section class="documents">
+    <section class="documents position-relative">
         <div class="container">
             <div class="row">
                 <div class="col-12 title_text">
@@ -381,21 +513,43 @@
                 </div>
             </div>
 
-            <div class="row doc_item">
-                <div class="col-lg-4">
-                    <img src="assets/images/png/docLeft.png" alt="">
-                </div>
-                <div class="col-lg-4 doc_middle">
-                    <img src="assets/images/png/doc1.png" alt="">
-                    <img src="assets/images/png/doc2.png" alt="">
-                    <img src="assets/images/png/doc3.png" alt="">
-                    <img src="assets/images/png/doc4.png" alt="">
-                </div>
-                <div class="col-lg-4">
-                    <img src="assets/images/png/docRight.png" alt="">
+            <div class="row no-gutters">
+                <div class="col-12 doc_item">
+                    <div class="doc_list">
+                        <img class="doc_img doc_img_big" src="assets/images/svg/doc1.svg" alt="">
+                        <div class="hover"></div>
+                    </div>
+                    <div class="doc_middle_list">
+                        <div class="doc_item_list">
+                            <div class="doc_list">
+                                <img class="doc_img" src="assets/images/svg/doc2.svg" alt="">
+                                <div class="hover"></div>
+                            </div>
+                            <div class="doc_list">
+                                <img class="doc_img" src="assets/images/svg/doc3.svg" alt="">
+                                <div class="hover"></div>
+                            </div>
+                        </div>
+                        <div class="doc_item_list mt-4">
+                        <div class="doc_list">
+                            <img class="doc_img" src="assets/images/svg/doc4.svg" alt="">
+                            <div class="hover"></div>
+                        </div>
+                        <div class="doc_list">
+                            <img class="doc_img" src="assets/images/svg/doc5.svg" alt="">
+                            <div class="hover"></div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="doc_list">
+                        <img class="doc_img doc_img_big" src="assets/images/svg/doc6.svg" alt="">
+                        <div class="hover"></div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
+ 
     </section>
     <!-- End  documents-->
 
@@ -407,80 +561,125 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 ">
+                <div class="col-lg-4 col-sm-6 col-12 position-relative">
                     <div class="services_list">
-                        <span>Образовательные учреждения</span>
+                        <h3 class="services_list_titleText">Образовательные учреждения</h3>
                     <img src="assets/images/png/down.png" alt="">
+                    <div class="background"></div>
+                    <div class="services_list_info">
+                        <h5>1 раз в год</h5>
+                        <p>Закрытые сооружения</p>
+                        <p>Помещения с нормальной средой</p>
+                        <h5>1 раз в 6 месяцев</h5>
+                        <p>Открытые сооружения</p>
+                        <p>Сырые, пожароопасные, взрывоопасные помещения </p>
+                    </div>
+                    </div>
                     <div class="circle">
                         <div class="line"></div>
                         <img src="assets/images/png/icon1.png" alt="">
                     </div>
-                    </div>
                 </div>
-                <div class="col-lg-4 ">
+                <div class="col-lg-4 col-sm-6 col-12 position-relative">
                     <div class="services_list middle">
-                        <span>Учреждения здравоохранения</span>
+                        <h3 class="services_list_titleText">Учреждения здравоохранения</h3>
                     <img src="assets/images/png/down.png" alt="">
-                    <div class="circle">
+                    <div class="background"></div>
+                    <div class="services_list_info">
+                        <h5>1 раз в год</h5>
+                        <p>Закрытые сооружения</p>
+                        <p>Помещения с нормальной средой</p>
+                    </div>
+                    </div>
+                    <div class="circle circle_middle">
                         <div class="line"></div>
                         <img src="assets/images/png/icon2.png" alt="">
                     </div>
-                    </div>
                 </div>
-                <div class="col-lg-4 ">
+                <div class="col-lg-4 col-sm-6 col-12">
                     <div class="services_list">
-                        <span>Предприятия общественного питания</span>
+                        <h3 class="services_list_titleText">Предприятия общественного питания</h3>
                     <img src="assets/images/png/down.png" alt="">
+                    <div class="background"></div>
+                    
+                    <div class="services_list_info">
+                        <h5>1 раз в год</h5>
+                        <p>Закрытые сооружения</p>
+                        <p>Помещения с нормальной средой</p>
+                    </div>
+                    </div>
                     <div class="circle">
                         <div class="line"></div>
                         <img src="assets/images/png/icon3.png" alt="">
                     </div>
-                    </div>
                 </div>
                 
-                <div class="col-lg-4 ">
+                <div class="col-lg-4 col-sm-6 col-12">
                     <div class="services_list">
-                        <span>Подъемные <br> сооружения</span>
+                        <h3 class="services_list_titleText">Подъемные <br> сооружения</h3>
                     <img src="assets/images/png/down.png" alt="">
+                    <div class="background"></div>
+                    
+                    <div class="services_list_info">
+                        <h5>1 раз в год</h5>
+                        <p>Закрытые сооружения</p>
+                        <p>Помещения с нормальной средой</p>
+                    </div>
+                    </div>
                     <div class="circle">
                         <div class="line"></div>
                         <img src="assets/images/png/icon4.png" alt="">
                     </div>
-                    </div>
                 </div>
-                <div class="col-lg-4 ">
+                <div class="col-lg-4 col-sm-6 col-12 position-relative">
                     <div class="services_list middle">
-                        <span>Сфера бытового обслуживания</span>
+                        <h3 class="services_list_titleText">Сфера бытового обслуживания</h3>
                     <img src="assets/images/png/down.png" alt="">
-                    <div class="circle">
+                    <div class="background"></div>
+                    
+                    <div class="services_list_info">
+                        <h5>1 раз в год</h5>
+                        <p>Закрытые сооружения</p>
+                        <p>Помещения с нормальной средой</p>
+                    </div>
+                    </div>
+                    <div class="circle circle_middle">
                         <div class="line"></div>
                         <img src="assets/images/png/icon5.png" alt="">
                     </div>
-                    </div>
                 </div>
-                <div class="col-lg-4 ">
+                <div class="col-lg-4 col-sm-6 col-12 position-relative">
                     <div class="services_list">
-                        <span>Общедомовые электрические плиты</span>
+                        <h3 class="services_list_titleText">Общедомовые электрические плиты</h3>
                     <img src="assets/images/png/down.png" alt="">
+                    <div class="background"></div>
+                    
+                    <div class="services_list_info">
+                        <h5>1 раз в год</h5>
+                        <p>Закрытые сооружения</p>
+                        <p>Помещения с нормальной средой</p>
+                    </div>
+                    </div>
                     <div class="circle">
                         <div class="line"></div>
                         <img src="assets/images/png/icon6.png" alt="">
-                    </div>
                     </div>
                 </div>
             </div>
 
             <div class="row questions">
-                <div class="col-12 questions_item">
-                    <h3>Остались <span>вопросы?</span></h3>
+                <div class="col-12 ">
+                    <div class="questions_item">
+                        <h3>Остались <span>вопросы?</span></h3>
                     <div class="form_list">
                         <div>
                             <h4>Мы бесплатно проконсультируем <br> вас по всем вопросам!</h4>
                             <form action="">
-                                <input type="text" name="user-phone" id="userPhone" placeholder="Ваш номер телефона">
-                                <button type="button">Получить консультацию</button>
+                                <input type="text" name="user-phone" class="phone" id="userPhone" placeholder="Ваш номер телефона" required>
+                                <button type="submit">Получить консультацию</button>
                             </form>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -489,7 +688,9 @@
     <!-- End our_services -->
 
     <section class="map">
-        <div style="position:relative;overflow:hidden;"><a href="https://yandex.by/MAPS/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.by/MAPS/213/moscow/house/ploshchad_zhuravlyova_2s2/Z04YcQdiS0wFQFtvfXt5dXxiYQ==/?ll=37.714754%2C55.784487&utm_medium=mapframe&utm_source=maps&z=16.45" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты</a><iframe src="https://yandex.by/map-widget/v1/-/CCUijBvboA" width="100%" height="800" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        <div style="position:relative;overflow:hidden;"><a href="https://yandex.by/MAPS/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.by/MAPS/213/moscow/house/ploshchad_zhuravlyova_2s2/Z04YcQdiS0wFQFtvfXt5dXxiYQ==/?ll=37.714754%2C55.784487&utm_medium=mapframe&utm_source=maps&z=16.45" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты</a>
+            <iframe src="https://yandex.by/map-widget/v1/-/CCUijBvboA" width="100%" height="800" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        </div>
         <div class="contact_modal">
             <h2>Контакты</h2>
             <p>г. Москва пл. Журавлева, д.2, с.2</p>
@@ -523,20 +724,26 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-12 d-flex align-items-center justify-content-between">
+                <div class="col-md-4 col-12 text-center footer_text">
                     <a href="">Политика конфиденциальности</a>
-                    <a href="">Пользовательское соглашение</a>
-                    <a href="">@ centrenergoekspertizy, 2021</a>
-                </div>
+                    </div>
+                    <div class="col-md-4 col-12 text-center footer_text">
+                        <a href="">Пользовательское соглашение</a>
+                    </div>
+                    <div class="col-md-4 col-12 text-center footer_text">
+                        <a href="">@ centrenergoekspertizy, 2021</a>
+                    </div>
             </div>
         </div>
     </footer>
 
-
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="assets/js/plugins/jquery.min.js"></script>
+    <script src="assets/js/plugins/mask.js"></script>
+    <script src="assets/js/plugins/jquery.waypoints.min.js"></script>
+    <script src="assets/js/plugins/jquery.counterup.min.js"></script>
+    <script src="assets/js/coruselBrand.js"></script>
+    <script src="assets/js/coruselCommand.js"></script>
+    <script src="assets/js/form.js"></script>
     <script src="assets/js/main.js"></script>
 
 </body>

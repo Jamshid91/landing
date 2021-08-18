@@ -1,43 +1,70 @@
-$('.counter_num').counterUp({
-    delay: 10,
-    time: 1000,
+
+let openMenu = document.querySelector('.menu_burger');
+let closeMenu = document.querySelector('.mobile_menu_closeBtn');
+let mobileMenu = document.querySelector('.mobile_menu');
+let mobileTableList = document.querySelector('.mobile_table_item_list');
+let userFile = document.getElementById('userFile');
+let openList = document.querySelectorAll('.services_list img');
+
+// open mobile menu
+openMenu.addEventListener('click', () => {
+    mobileMenu.classList.add('hideMenu')
 });
 
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
+closeMenu.addEventListener('click', () => {
+    mobileMenu.classList.remove('hideMenu')
 });
 
+// add user file
+userFile.addEventListener('change', (e) => {
+    let label = userFile.parentElement.parentElement.children[2],
+     checkIcon = userFile.parentElement.parentElement.children[1],
+     img = userFile.parentElement.parentElement.children[0];
+    label.innerText = 'Файл загрузил';
+    label.style.color = '#61BF1A';
+    checkIcon.style.display = 'inline-block';
+    img.style.display = 'none';
+  });
 
-// var owl = $('.owl-carousel .owl-carousel');
-// owl.owlCarousel({
-//     loop:true,
-//     nav:true,
-//     margin:10,
-//     responsive:{
-//         0:{
-//             items:1
-//         },
-//         600:{
-//             items:3
-//         },            
-//         960:{
-//             items:5
-//         },
-//         1200:{
-//             items:6
-//         }
-//     }
+   
+  openList.forEach(list => {
+    list.addEventListener('click', () => {
+      list.parentElement.classList.toggle('openList');
+      list.parentElement.children[0].classList.toggle('removeMargin');
+      list.classList.toggle('rotateBtn');
+    })
+  })
+
+
+
+  $(document).ready(function() {
+    $(".phone").mask("+7 (999) 99-99-999");
+  })
+
+
+
+
+// let docItem = document.querySelectorAll('.doc_list');
+// let hoverDoc = document.querySelector('.doc_list .hover');
+// let zoomDocImg = document.querySelector('.zoom_doc_img img');
+// let closeZoomDoc = document.querySelector('.zoom_doc_img i');
+// let zoomDoc = document.querySelector('.zoom_doc_img');
+// let body = document.body
+
+// function disabledScroll() {
+//   body.scrollTo(0, 0)
+// }
+
+// docItem.forEach(doc => {
+
+//   doc.addEventListener('click', () => {
+//     zoomDoc.style.display = 'flex'
+//     zoomDocImg.src = doc.children[0].src
+//   })
+//   disabledScroll()
 // });
+
+
+// closeZoomDoc.addEventListener('click', () => {
+//   zoomDoc.style.display = 'none'
+// })

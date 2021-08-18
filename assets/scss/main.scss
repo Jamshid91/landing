@@ -258,6 +258,7 @@ textarea::-webkit-scrollbar-thumb{
             bottom: 30px;
             transform: translate(-50%);
             animation: 1s animCat linear infinite alternate;
+            display: none;
         }
 
     }

@@ -522,6 +522,7 @@ header .cat_arrow {
           transform: translate(-50%);
   -webkit-animation: 1s animCat linear infinite alternate;
           animation: 1s animCat linear infinite alternate;
+  display: none;
 }
 
 .trust_us {
@@ -2777,5 +2778,8 @@ footer a:hover {
   .our_services .services_list {
     padding-top: 40px;
     padding-left: 10px;
+  }
+  .cat_arrow {
+    display: block !important;
   }
 }

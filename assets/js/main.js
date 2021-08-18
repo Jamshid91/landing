@@ -36,11 +36,17 @@ userFile.addEventListener('change', (e) => {
   })
 
 
-
+// mask phone
   $(document).ready(function() {
     $(".phone").mask("+7 (999) 99-99-999");
-  })
+  });
 
+  // counter num
+
+  $('.counter_num').counterUp({
+    delay: 10,
+    time: 1000
+  });
 
 
 

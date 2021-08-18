@@ -555,6 +555,12 @@
 }
 
 @media screen and (max-width: 576px) {
+    header {
+        height: 100vh;
+        .header_form_consultation {
+            margin-top: 70px;
+        }
+    }
     .title_text {
         text-align: center;
         h2 {

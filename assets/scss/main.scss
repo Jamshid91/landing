@@ -166,8 +166,8 @@ textarea::-webkit-scrollbar-thumb{
                     @include display-diraction(flex-end, space-between);
                     span {
                         display: block;
-                        width: 40px;
-                        height: 3px;
+                        width: 45px;
+                        height: 4px;
                         background-color: $color-blue;
 
                         &:nth-child(2) {
@@ -250,6 +250,14 @@ textarea::-webkit-scrollbar-thumb{
                     margin-left: 20px;
                 }
             }
+        }
+
+        .cat_arrow {
+            position: absolute;
+            left: 50%;
+            bottom: 30px;
+            transform: translate(-50%);
+            animation: 1s animCat linear infinite alternate;
         }
 
     }
@@ -589,6 +597,7 @@ textarea::-webkit-scrollbar-thumb{
                     color: $color-white;
                 }
                 &:hover  .line {
+                   transform: rotateZ(320deg);
                    border-color: $color-white;
                    border-right-color: transparent ;
                }
@@ -947,7 +956,7 @@ textarea::-webkit-scrollbar-thumb{
                             margin-left: 20px;
 
                             &:hover {
-                                background-color: $color-blue;
+                                background-color: $color-blue-black;
                             }
                         }
                     }
@@ -1052,6 +1061,14 @@ textarea::-webkit-scrollbar-thumb{
         }
         to {
             height: auto;
+        }
+    }
+
+    @keyframes animCat {
+        from {
+            transform: translateY(10px);
+        } to {
+            transform: translateY(-10px);
         }
     }
 

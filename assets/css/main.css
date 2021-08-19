@@ -523,6 +523,7 @@ header .cat_arrow {
   -webkit-animation: 1s animCat linear infinite alternate;
           animation: 1s animCat linear infinite alternate;
   display: none;
+  z-index: 0;
 }
 
 .trust_us {

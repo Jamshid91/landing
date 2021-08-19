@@ -259,6 +259,7 @@ textarea::-webkit-scrollbar-thumb{
             transform: translate(-50%);
             animation: 1s animCat linear infinite alternate;
             display: none;
+            z-index: 0;
         }
 
     }

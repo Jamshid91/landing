@@ -774,11 +774,11 @@ header .cat_arrow {
   position: relative;
 }
 
-.form form {
+.form_calculate_cost {
   width: 100%;
 }
 
-.form form .left h2 {
+.form_calculate_cost .left h2 {
   font-size: 48px;
   font-family: "Open_Sans";
   font-weight: 600;
@@ -788,11 +788,11 @@ header .cat_arrow {
   line-height: 65px;
 }
 
-.form form .left h2 span {
+.form_calculate_cost .left h2 span {
   color: #0057A6;
 }
 
-.form form .left p {
+.form_calculate_cost .left p {
   font-size: 18px;
   font-family: "Montserrat";
   font-weight: 500;
@@ -802,7 +802,7 @@ header .cat_arrow {
   margin: 0;
 }
 
-.form form .left button {
+.form_calculate_cost .left button {
   width: 325px;
   height: 62px;
   border: 2px solid #61BF1A;
@@ -821,11 +821,11 @@ header .cat_arrow {
   margin-bottom: 20px;
 }
 
-.form form .left button:hover {
+.form_calculate_cost .left button:hover {
   background-color: #55A717;
 }
 
-.form form .left .sub_text {
+.form_calculate_cost .left .sub_text {
   font-size: 12px;
   font-family: "Montserrat";
   font-weight: 500;
@@ -834,33 +834,33 @@ header .cat_arrow {
   font-display: swap;
 }
 
-.form form .left .sub_text a {
+.form_calculate_cost .left .sub_text a {
   text-decoration: none;
 }
 
-.form form .form_list {
+.form_calculate_cost .form_list {
   width: 520px;
   height: 560px;
   border: 6px solid #61BF1A;
   padding: 60px;
 }
 
-.form form .form_list .inp_label,
-.form form .form_list .text_label {
+.form_calculate_cost .form_list .inp_label,
+.form_calculate_cost .form_list .text_label {
   width: 100%;
   position: relative;
   margin: 0;
 }
 
-.form form .form_list .inp_label .return_error,
-.form form .form_list .text_label .return_error {
+.form_calculate_cost .form_list .inp_label .return_error,
+.form_calculate_cost .form_list .text_label .return_error {
   position: absolute;
   left: 0;
   bottom: 10px;
   color: #e74c3c;
 }
 
-.form form .form_list input {
+.form_calculate_cost .form_list input {
   width: 100%;
   height: 65px;
   border: 1px solid #000000;
@@ -876,7 +876,7 @@ header .cat_arrow {
   margin-bottom: 30px;
 }
 
-.form form .form_list input::-webkit-input-placeholder {
+.form_calculate_cost .form_list input::-webkit-input-placeholder {
   color: #898989;
   font-size: 18px;
   font-family: "Montserrat";
@@ -886,7 +886,7 @@ header .cat_arrow {
   font-display: swap;
 }
 
-.form form .form_list input:-ms-input-placeholder {
+.form_calculate_cost .form_list input:-ms-input-placeholder {
   color: #898989;
   font-size: 18px;
   font-family: "Montserrat";
@@ -896,7 +896,7 @@ header .cat_arrow {
   font-display: swap;
 }
 
-.form form .form_list input::-ms-input-placeholder {
+.form_calculate_cost .form_list input::-ms-input-placeholder {
   color: #898989;
   font-size: 18px;
   font-family: "Montserrat";
@@ -906,7 +906,7 @@ header .cat_arrow {
   font-display: swap;
 }
 
-.form form .form_list input::placeholder {
+.form_calculate_cost .form_list input::placeholder {
   color: #898989;
   font-size: 18px;
   font-family: "Montserrat";
@@ -916,15 +916,15 @@ header .cat_arrow {
   font-display: swap;
 }
 
-.form form .form_list input:focus {
+.form_calculate_cost .form_list input:focus {
   border: 1px solid #61BF1A;
 }
 
-.form form .form_list .errorInp {
+.form_calculate_cost .form_list .errorInp {
   border: 1px solid #e74c3c;
 }
 
-.form form .form_list textarea {
+.form_calculate_cost .form_list textarea {
   width: 100%;
   height: 100px;
   resize: none;
@@ -937,39 +937,41 @@ header .cat_arrow {
   color: #898989;
   font-style: normal;
   font-display: swap;
+  border: 1px solid #000000;
 }
 
-.form form .form_list textarea:focus {
+.form_calculate_cost .form_list textarea:focus {
   border: 1px solid #61BF1A !important;
 }
 
-.form form .form_list .file_label {
+.form_calculate_cost .form_list .file_label {
   height: 25px;
   position: relative;
   cursor: pointer;
 }
 
-.form form .form_list .file_label input {
-  width: 50px;
+.form_calculate_cost .form_list .file_label input {
+  width: 100px;
   margin-left: 25px;
   cursor: pointer;
   display: none;
 }
 
-.form form .form_list .file_label .fa-check-circle {
+.form_calculate_cost .form_list .file_label .fa-check-circle {
   display: none;
   color: #61BF1A;
   font-size: 20px;
 }
 
-.form form .form_list .file_label .return_error {
+.form_calculate_cost .form_list .file_label .return_error {
+  width: 200px;
   position: absolute;
   left: 0;
   bottom: -20px;
   color: #e74c3c;
 }
 
-.form form .form_list .file_text {
+.form_calculate_cost .form_list .file_text {
   font-size: 18px;
   font-family: "Montserrat";
   font-weight: 500;
@@ -1067,9 +1069,9 @@ header .cat_arrow {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
+  -webkit-transition: .6s;
+  -o-transition: .6s;
+  transition: .6s;
 }
 
 .leave_request .request_item .circle .num {

@@ -1,12 +1,35 @@
+let form = document.querySelector('.form_calculate_cost');
 let inputs = document.querySelectorAll('.form_list input');
 let btnRequest = document.querySelector('.form_button_agree button');
 let userMessage = document.getElementById('userMessage');
+let userFile = document.getElementById('userFile')
 
 const [userName,  userPhone, userEmail,] = inputs;
 
+
+
+
+// add user file
+userFile.addEventListener('change', (e) => {
+  let label = userFile.parentElement.parentElement.children[2],
+   checkIcon = userFile.parentElement.parentElement.children[1],
+   img = userFile.parentElement.parentElement.children[0];
+  label.innerText = 'Файл загрузил';
+  label.style.color = '#61BF1A';
+  checkIcon.style.display = 'inline-block';
+  img.style.display = 'none';
+  
+  userFile.parentElement.children[1].textContent = ''
+  userFile.classList.add('inputSucces');
+});
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+})
+
 btnRequest.addEventListener('click', () => {
   checkInputs()
-  if(userName.classList == 'inputSucces' && userEmail.classList == 'inputSucces' && userPhone.classList == 'inputSucces') {
+  if(userName.classList == 'inputSucces' && userEmail.classList == 'inputSucces' && userPhone.classList == 'inputSucces' && userFile.classList == 'inputSucces') {
    return btnRequest.type = 'submit'
   }
 })
@@ -16,6 +39,8 @@ function checkInputs() {
   let userEmailValue = userEmail.value.trim();
   let userPhoneValue = userPhone.value.trim();
   let userMessageValue = userMessage.value.trim();
+  let userFileValue = userFile.value.trim();
+
 
   // user name
   if(userNameValue === '') {
@@ -62,7 +87,9 @@ function checkInputs() {
         userMessage.classList.remove('errorInp')
       }
     
-
+      if(userFileValue === '') {
+        userFile.parentElement.children[1].textContent = 'Файл не загружен'
+      }
 }
 
 

@@ -3,7 +3,6 @@ let openMenu = document.querySelector('.menu_burger');
 let closeMenu = document.querySelector('.mobile_menu_closeBtn');
 let mobileMenu = document.querySelector('.mobile_menu');
 let mobileTableList = document.querySelector('.mobile_table_item_list');
-let userFile = document.getElementById('userFile');
 let openList = document.querySelectorAll('.services_list img');
 
 // open mobile menu
@@ -15,16 +14,6 @@ closeMenu.addEventListener('click', () => {
     mobileMenu.classList.remove('hideMenu')
 });
 
-// add user file
-userFile.addEventListener('change', (e) => {
-    let label = userFile.parentElement.parentElement.children[2],
-     checkIcon = userFile.parentElement.parentElement.children[1],
-     img = userFile.parentElement.parentElement.children[0];
-    label.innerText = 'Файл загрузил';
-    label.style.color = '#61BF1A';
-    checkIcon.style.display = 'inline-block';
-    img.style.display = 'none';
-  });
 
    
   openList.forEach(list => {

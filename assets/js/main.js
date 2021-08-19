@@ -36,30 +36,3 @@ closeMenu.addEventListener('click', () => {
     delay: 10,
     time: 1000
   });
-
-
-
-// let docItem = document.querySelectorAll('.doc_list');
-// let hoverDoc = document.querySelector('.doc_list .hover');
-// let zoomDocImg = document.querySelector('.zoom_doc_img img');
-// let closeZoomDoc = document.querySelector('.zoom_doc_img i');
-// let zoomDoc = document.querySelector('.zoom_doc_img');
-// let body = document.body
-
-// function disabledScroll() {
-//   body.scrollTo(0, 0)
-// }
-
-// docItem.forEach(doc => {
-
-//   doc.addEventListener('click', () => {
-//     zoomDoc.style.display = 'flex'
-//     zoomDocImg.src = doc.children[0].src
-//   })
-//   disabledScroll()
-// });
-
-
-// closeZoomDoc.addEventListener('click', () => {
-//   zoomDoc.style.display = 'none'
-// })

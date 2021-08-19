@@ -1440,7 +1440,7 @@ header .cat_arrow {
 }
 
 .documents .doc_list:hover .hover {
-  background-color: #fff9;
+  background-color: #0009;
 }
 
 .documents .doc_list .hover {
@@ -1925,6 +1925,49 @@ footer a {
 
 footer a:hover {
   color: #0057A6;
+}
+
+.zoom {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #0009;
+  z-index: 9999999;
+  display: none;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.zoom_document {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+
+.zoom_document_img {
+  width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.zoom_document .close_zom_btn {
+  position: absolute;
+  right: -20px;
+  top: 0px;
+  color: #e74c3c;
+  font-size: 50px;
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  cursor: pointer;
 }
 
 @-webkit-keyframes openList {
@@ -2783,5 +2826,34 @@ footer a:hover {
   }
   .cat_arrow {
     display: block !important;
+  }
+  .zoom {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #0009;
+    z-index: 9999999;
+    display: none;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .zoom_document {
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+  .zoom_document_img {
+    width: 320px;
+  }
+  .zoom_document .close_zom_btn {
+    font-size: 50px;
   }
 }

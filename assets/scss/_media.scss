@@ -556,7 +556,7 @@
 
 @media screen and (max-width: 576px) {
     header {
-        height: 100vh;
+        height:  auto !important;
         .header_form_consultation {
             margin-top: 70px;
         }
